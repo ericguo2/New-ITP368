@@ -1,0 +1,22 @@
+name: sound_board
+description: A Flutter soundboard app.
+
+publish_to: 'none' # Remove this line if you intend to publish to pub.dev
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  record: ^4.4.3
+  just_audio: ^0.9.30
+  path_provider: ^2.0.14
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
