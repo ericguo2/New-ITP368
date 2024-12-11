@@ -37,9 +37,5 @@ class Obstacle extends PositionComponent with HasGameRef {
       position.x = gameRef.size.x + size.x / 2;
     }
 
-    // Example Animation: Slight vertical oscillation for logs
-    // if (type == ObstacleType.log) {
-    //   position.y += sin(gameRef.gameLoopTime.elapsedSeconds * 5) * 0.5;
-    // }
   }
 }

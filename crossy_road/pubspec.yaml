@@ -1,7 +1,7 @@
 name: crossy_road_clone
 description: A simple Crossy Road clone built with Flutter and Flame using shapes.
 
-publish_to: "none" # Remove this line if you wish to publish to pub.dev
+publish_to: "none" 
 
 environment:
   sdk: ">=2.17.0 <3.0.0"
@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   flame: ^1.4.0
-  flame_audio: ^1.0.0 # Added for audio features
+  flame_audio: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -22,5 +22,3 @@ flutter:
   assets:
     - assets/audio/move.mp3
     - assets/audio/death.mp3
-    # If you have background music or other audio, include them here
-    # - assets/audio/background.mp3

@@ -1,7 +1,7 @@
 // lib/player.dart
 import 'package:flame/components.dart';
 import 'package:flutter/material.dart';
-import 'package:flame_audio/flame_audio.dart'; // Import FlameAudio
+import 'package:flame_audio/flame_audio.dart'; 
 
 class Player extends PositionComponent with HasGameRef {
   double moveDistance = 100.0;
@@ -19,24 +19,24 @@ class Player extends PositionComponent with HasGameRef {
   void moveUp() {
     position.y -= moveDistance;
     position.y = position.y.clamp(radius, gameRef.size.y - radius);
-    FlameAudio.play('move.mp3'); // Play move sound
+    FlameAudio.play('move.mp3');
   }
 
   void moveDown() {
     position.y += moveDistance;
     position.y = position.y.clamp(radius, gameRef.size.y - radius);
-    FlameAudio.play('move.mp3'); // Play move sound
+    FlameAudio.play('move.mp3'); 
   }
 
   void moveLeft() {
     position.x -= moveDistance;
     position.x = position.x.clamp(radius, gameRef.size.x - radius);
-    FlameAudio.play('move.mp3'); // Play move sound
+    FlameAudio.play('move.mp3'); 
   }
 
   void moveRight() {
     position.x += moveDistance;
     position.x = position.x.clamp(radius, gameRef.size.x - radius);
-    FlameAudio.play('move.mp3'); // Play move sound
+    FlameAudio.play('move.mp3'); 
   }
 }

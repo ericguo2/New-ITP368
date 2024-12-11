@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 
 void main() {
   runApp(MaterialApp(
-    debugShowCheckedModeBanner: false, // Optional: Removes the debug banner
+    debugShowCheckedModeBanner: false, 
     home: GameWidgetWrapper(),
   ));
 }
@@ -73,7 +73,6 @@ class _GameWidgetWrapperState extends State<GameWidgetWrapper> {
                 backgroundBuilder: (context) => Container(color: Colors.green[700]!),
               ),
             ),
-            // Optional: On-Screen Buttons
             Positioned(
               bottom: 50,
               left: 50,

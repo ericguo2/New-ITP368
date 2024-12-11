@@ -64,10 +64,6 @@ class CrossyRoadGame extends FlameGame with HasCollisionDetection {
 
     // Initialize audio
     await FlameAudio.audioCache.loadAll(['move.mp3', 'death.mp3']);
-    // If you have background music, uncomment the following lines and ensure background.mp3 is loaded
-    // await FlameAudio.audioCache.load('background.mp3');
-    // FlameAudio.bgm.initialize();
-    // FlameAudio.bgm.play('background.mp3', volume: 0.5);
 
     // Initialize lane types
     laneTypes = List.generate(
@@ -172,7 +168,7 @@ class CrossyRoadGame extends FlameGame with HasCollisionDetection {
       // Player wins: reset position and increment score
       resetPlayer();
       scoreNotifier.value += 1; // Increment score
-      FlameAudio.play('move.mp3'); // Play move sound (or another appropriate sound)
+      FlameAudio.play('move.mp3'); 
     }
   }
 
@@ -180,11 +176,8 @@ class CrossyRoadGame extends FlameGame with HasCollisionDetection {
     player.position = Vector2(size.x / 2, size.y - laneHeight / 2);
     livesNotifier.value -= 1;
     if (livesNotifier.value <= 0) {
-      // Handle Game Over (e.g., reset game or display a Game Over screen)
-      // For simplicity, reset lives and score
       livesNotifier.value = 3;
       scoreNotifier.value = 0;
-      // Optionally, display a Game Over dialog or navigate to a different screen
     }
   }
 }
