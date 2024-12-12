@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flame_audio/flame_audio.dart'; 
 
 class Player extends PositionComponent with HasGameRef {
-  double moveDistance = 97.5;
+  double moveDistance = 94.0;
   final double radius = 25.0; // Radius of the player circle
 
   Player({Vector2? position}) : super(position: position, size: Vector2.all(50));
